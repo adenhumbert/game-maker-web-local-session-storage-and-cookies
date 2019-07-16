@@ -57,7 +57,7 @@ function web_cookie_get(key) {
   let matches = document.cookie.match(new RegExp(
     "(?:^|; )" + key.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
   ));
-  return matches ? decodeURIComponent(matches[1]) : "undefined";
+  return matches ? decodeURIComponent(matches[1]) : "N/A";
 }
 
 function web_cookie_remove(key) {
